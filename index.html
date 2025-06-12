@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opsell AI - E-commerce operations that run themselves</title>
+    <meta name="description" content="Opsell AI is an AI-powered operations platform designed to streamline and optimise e-commerce performance for D2C and enterprise brands.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://www.opsell.in/"> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar-sticky">
+        <nav class="container navbar-content">
+            <a href="#" class="logo" onclick="scrollToTop(event)">
+                Opsell AI
+            </a>
+
+            <div class="nav-links desktop-nav">
+                <a href="#problem-solution" class="nav-link" onclick="smoothScroll(event)">Features</a>
+                <a href="#product-comparison" class="nav-link" onclick="smoothScroll(event)">Why Opsell</a>
+                <a href="#user-persona" class="nav-link" onclick="smoothScroll(event)">Use case</a>
+                <a href="#team" class="nav-link" onclick="smoothScroll(event)">Our team</a>
+                
+            </div>
+            
+            <a class="cta-button primary-cta desktop-cta" onclick="smoothScroll(event, '#call-to-action')">Schedule a call</a>
+
+            <div class="mobile-menu-toggle">
+                <button id="mobile-menu-button" class="mobile-menu-icon-button">
+                    <img src="./icons/hamburger_icon.svg" alt="Mobile Menu" class="mobile-icon">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+        <button class="close-btn" id="close-mobile-menu">
+            &times;
+        </button>
+
+        <nav class="mobile-nav-links">
+            <a href="#problem-solution" class="mobile-nav-link" onclick="smoothScroll(event, '#problem-solution'); closeMobileMenu()">Features</a>
+            <a href="#product-comparison" class="mobile-nav-link" onclick="smoothScroll(event, '#product-comparison'); closeMobileMenu()">Why Opsell</a>
+            <a href="#user-persona" class="mobile-nav-link" onclick="smoothScroll(event, '#user-persona'); closeMobileMenu()">Use case</a>
+            <a href="#team" class="mobile-nav-link" onclick="smoothScroll(event, '#team'); closeMobileMenu()">Our team</a>
+            <a class="cta-button primary-cta mobile-cta" onclick="smoothScroll(event, '#call-to-action'); closeMobileMenu()">Schedule a call</a>
+        </nav>
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section section-padding">
+            <div class="container hero-content">
+                <h1 class="hero-headline">
+                    Opsell AI - E-commerce operations that run themselves
+                </h1>
+                <p class="hero-subheadline">
+                    Automate your listing, content, pricing, and promotions across every channel. So your team scales, not your chaos.
+                </p>
+                <div class="hero-cta-group">
+                    <a class="cta-button primary-cta" onclick="smoothScroll(event, '#call-to-action')">
+                        Schedule a call
+                    </a>
+                    <a class="cta-button secondary-cta" onclick="smoothScroll(event, '#problem-solution')">
+                        How Opsell works
+                    </a>
+                </div>
+                <div class="hero-visual-placeholder">
+                    [Placeholder]
+                </div>
+            </div>
+        </section>
+
+        <section id="problem-solution" class="problem-solution-section section-padding bg-white">
+            <div class="container">
+                <h2 class="section-headline text-center">
+                    Stop juggling tabs. Start automating growth.
+                </h2>
+                <p class="section-subheadline text-center">
+                    In the fast-paced world of e-commerce, bottlenecks don't just slow you down - they cost you sales. Opsell is your single system for intelligent, automated operations.
+                </p>
+
+                <div class="problem-solution-grid">
+                    <div class="card problem-solution-card card-hover-effect">
+                        <div class="card-header">
+                            <p class="card-title">Siloed tools & fragmented workflows</p>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-solution-overview">Unified listing and performance management</h3>
+                            <p class="card-description">
+                                Opsell unifies your e-commerce operations by helping you manage your listings, prices and promotions from one AI-powered hub, thus, eliminating fragmented workflows for each platform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card problem-solution-card card-hover-effect">
+                        <div class="card-header">
+                            <p class="card-title">Gut-based & manual decisions-making</p>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-solution-overview">AI-driven pricing & promo optimisation</h3>
+                            <p class="card-description">
+                                Opsell brings intelligence to your growth levers. Our AI pricing engine and discount optimiser recommend potential opportunities and automate decisions, thus, maximising margins and accelerating your growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card problem-solution-card card-hover-effect">
+                        <div class="card-header">
+                            <p class="card-title">Limited visibility & delayed reactions</p>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-solution-overview">Real-time intelligence & experimentation</h3>
+                            <p class="card-description">
+                                Opsell provides real-time category and competitor insights across all platforms. We track and report key trends instantly, giving you the opportunity to experiement and react dynamically to win.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card problem-solution-card card-hover-effect">
+                        <div class="card-header">
+                            <p class="card-title">High agency dependence & execution gaps</p>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-solution-overview">Autonomous workflows & secure execution</h3>
+                            <p class="card-description">
+                                Opsell empowers your team with direct, AI-driven control, thus, reducing agency bloat and gain a repeatable system for all critical e-commerce actions, securely.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-comparison" class="product-comparison-section section-padding bg-light-grey">
+            <div class="container text-center">
+                <h2 class="section-headline">
+                    Insights don’t win. Automation does.
+                </h2>
+                <p class="section-subheadline">
+                    E-commerce is too fast for passive dashboards and manual intervention. Winning brands move in real-time - with systems that act, not just observe.
+                </p>
+
+                <div class="comparison-grid">
+                    <div class="card comparison-card old-way-card card-hover-effect">
+                        <h3 class="comparison-card-title">
+                            Old way (with dashboards only)
+                        </h3>
+                        <ul class="comparison-list">
+                            <li class="comparison-list-item">Manual logins across multiple platforms.</li>
+                            <li class="comparison-list-item">Static, delayed reports that need interpretation.</li>
+                            <li class="comparison-list-item">Slow, reactive decisions and execution delays.</li>
+                            <li class="comparison-list-item">Missed revenue opportunities due to manual bottlenecks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card comparison-card opsell-way-card card-hover-effect">
+                        <h3 class="comparison-card-title">
+                            Opsell way (with intelligent automation)
+                        </h3>
+                        <ul class="comparison-list">
+                            <li class="comparison-list-item">Centralised, unified control from one dashboard.</li>
+                            <li class="comparison-list-item">Real-time data feeds directly into AI recommendations.</li>
+                            <li class="comparison-list-item">Real-time & automated pricing, listing, and promo changes.</li>
+                            <li class="comparison-list-item">Proactive optimisation for continuous revenue growth.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comparison-visual-placeholder">
+                    [Placeholder]
+                </div>
+            </div>
+        </section>
+
+        <section id="user-persona" class="user-persona-section section-padding bg-white">
+            <div class="container">
+                <h2 class="section-headline text-center">
+                    Built for every kind of e-commerce leader
+                </h2>
+                <p class="section-subheadline text-center">
+                    Whether you're scaling a D2C brand, managing multiple clients, or overseeing an enterprise portfolio, Opsell simplifies complexity and drives growth.
+                </p>
+
+                <div class="persona-grid">
+                    <div class="card persona-card card-hover-effect">
+                        <div class="card-header">
+                            <h3 class="card-solution-overview">
+                                Fast-growing D2C brands
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Seamlessly manage and optimise your storefronts and marketplaces from a single, intelligent dashboard. Scale your operations without endlessly growing your team.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card persona-card card-hover-effect">
+                        <div class="card-header">
+                            <h3 class="card-solution-overview">
+                                Large retail resellers
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Automate multi-platform listing, pricing, campaign and promotion management. Drive operational efficiency and boost your performance across all your channels.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card persona-card card-hover-effect">
+                        <div class="card-header">
+                            <h3 class="card-solution-overview">
+                                Enterprise brands
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Centralise multi-brand e-commerce execution, ensure real-time strategic alignment across all platforms, and gain competitive edge with advanced market intelligence and experimentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section section-padding bg-white">
+            <div class="container text-center">
+                <h2 class="section-headline">
+                    Meet the team behind Opsell
+                </h2>
+                <p class="section-subheadline">
+                    Our team brings together deep expertise in e-commerce, artificial intelligence, and scalable technology.
+                </p>
+
+                <div class="team-grid">
+                    <div class="card team-member-card card-hover-effect">
+                        <div class="card-content">
+                            <div class="member-photo">[Placeholder]</div>
+                            <h3 class="member-name">Sangeet Chandaliya</h3>
+                            <p class="member-designation">Chief Technology Officer</p>
+                            <p class="member-experience">Previously @ Cube, OYO</p>
+                        </div>
+                    </div>
+
+                    <div class="card team-member-card card-hover-effect">
+                        <div class="card-content">
+                            <div class="member-photo">[Placeholder]</div>
+                            <h3 class="member-name">Shaurya Gupta</h3>
+                            <p class="member-designation">Chief Commercial Officer</p>
+                            <p class="member-experience">Previously @ Fox, ShareChat</p>
+                        </div>
+                    </div>
+
+                    <div class="card team-member-card card-hover-effect">
+                        <div class="card-content">
+                            <div class="member-photo">[Placeholder]</div>
+                            <h3 class="member-name">[Placeholder]</h3>
+                            <p class="member-designation">[Placeholder]</p>
+                            <p class="member-experience">Previously @ [Placeholder]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-to-action" class="cta-section section-padding bg-light-grey">
+            <div class="container text-center">
+                <h2 class="section-headline">
+                    Stop scrolling. Start scaling.
+                </h2>
+                <p class="section-subheadline">
+                    Discover how Opsell can transform your e-commerce operations. It’s time to grow smarter, not harder.
+                </p>
+
+                <a class="cta-button primary-cta large-cta" onclick="window.open('https://calendly.com/your-opsell-calendar', '_blank')">
+                    Schedule a call
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-info">
+                <p class="footer-logo">Opsell AI</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/opsell" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/opsell" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153L22.613 0l-1.042 3.51c.96.488 1.83 1.054 2.628 1.706L24 7.027l-3.81 1.25c-.244.08-.49.165-.736.25l.89 2.923-1.041 3.51-3.812-1.25c-.246-.08-.493-.164-.738-.249l-.888 2.922-1.041 3.51-3.812-1.25c-.246-.08-.493-.164-.738-.249L7.14 20.354l-1.042 3.51L2.28 22.613l.89-2.923c.244-.08.49-.165.736-.25L0 18.901l1.042-3.51c-.96-.488-1.83-1.054-2.628-1.706L0 17.027l3.81-1.25c.244-.08.49-.165.736-.25l-.89-2.923 1.041-3.51 3.812 1.25c.246.08.493.164.738.249l.888-2.922 1.041-3.51 3.812 1.25c.246.08.493.164.738.249L16.86 3.646l1.042-3.51z"/></svg>
+                        <span class="sr-only">X (Twitter)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#problem-solution" class="footer-link" onclick="smoothScroll(event)">How it works</a></li>
+                    <li><a href="#product-comparison" class="footer-link" onclick="smoothScroll(event)">Why Opsell</a></li>
+                    <li><a href="#user-persona" class="footer-link" onclick="smoothScroll(event)">Who it's for</a></li>
+                    <li><a href="#team" class="footer-link" onclick="smoothScroll(event)">About us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="privacy-policy.html" class="footer-link">Privacy policy</a></li> 
+                    <li><a href="terms-of-service.html" class="footer-link">Terms of service</a></li> </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://calendly.com/your-opsell-calendar" target="_blank" rel="noopener noreferrer" class="footer-link">Schedule a call</a></li>
+                    <li><a href="mailto:contact@opsell.in" class="footer-link">contact@opsell.in</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="container copyright-container">
+            <p class="footer-copyright">© 2025 Opsell. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        function smoothScroll(event, targetId) {
+            event.preventDefault();
+            const target = document.querySelector(targetId || event.target.getAttribute('href'));
+            if (target) {
+                const navbarHeight = document.querySelector('.navbar-sticky').offsetHeight;
+                window.scrollTo({
+                    top: target.offsetTop - navbarHeight,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Scroll to top for logo click
+        function scrollToTop(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        if (mobileMenuButton) { // Ensure button exists before adding listener
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenuOverlay.classList.add('open');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling body when menu is open
+            });
+        }
+
+        if (closeMobileMenuButton) { // Ensure button exists before adding listener
+            closeMobileMenuButton.addEventListener('click', () => {
+                closeMobileMenu();
+            });
+        }
+
+        function closeMobileMenu() {
+            mobileMenuOverlay.classList.remove('open');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close mobile menu when clicking outside (optional, but good UX)
+        if (mobileMenuOverlay) { // Ensure overlay exists before adding listener
+            mobileMenuOverlay.addEventListener('click', (event) => {
+                if (event.target === mobileMenuOverlay) {
+                    closeMobileMenu();
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
