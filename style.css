@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Inter, sans-serif;
     color: var(--color-opsell-grey-800);
     background-color: var(--color-opsell-white);
     -webkit-font-smoothing: antialiased;
@@ -441,11 +441,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.hero-visual-image {
+.hero-visual-image, .compare-visual-image {
     width: 100%;
-    max-width: 56rem; /* max-w-4xl */
+    max-width: 40rem; /* max-w-4xl */
     height: auto;
     opacity: 0.7; /* opacity-70 */
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+
+.compare-visual-image {
+    border-radius: 0.4rem !important;
 }
 
 /* --- Card Styles (Reused) --- */
@@ -586,7 +591,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-opsell-grey-300);
 }
 
-
 .comparison-visual-placeholder {
     margin-top: 1.5rem; /* mt-12 */
     min-height: 12.5rem; /* h-64 */
@@ -610,7 +614,6 @@ h1, h2, h3, h4, h5, h6 {
         margin: 1.5rem auto 0rem;
     }
 }
-
 
 /* --- User Persona Section --- */
 .user-persona-section {
@@ -909,7 +912,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 1rem; /* space-x-4 */
+    gap: 0.6rem; /* space-x-4 */
     margin-top: 1rem; /* mt-4 */
 }
 @media (min-width: 768px) { /* md breakpoint */
@@ -919,17 +922,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-icon {
-    color: var(--color-opsell-grey-300);
-    transition: color 0.2s ease;
+    width: 1.2rem;
 }
 
-.social-icon:hover {
-    color: var(--color-opsell-white);
-}
-
-.social-icon svg {
-    height: 1rem; /* h-6 */
-    width: 1rem; /* w-6 */
+.linkedin-icon, .x-icon {
+    width: 100%
 }
 
 /* --- Accessibility (Screen Reader Only) --- */
